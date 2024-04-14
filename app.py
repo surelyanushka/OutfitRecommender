@@ -1,5 +1,4 @@
 import streamlit as st
-from config import api_key
 import google.generativeai as genai
 
 st.title('Outfit Recommendation App 👗')
@@ -34,7 +33,7 @@ give the top 10 results bulletted in seperate lines
 
 '''
 
-genai.configure(api_key=api_key)
+genai.configure(api_key=st.secrets["api_key"])
 model = genai.GenerativeModel(model_name = "gemini-pro")
 
 
