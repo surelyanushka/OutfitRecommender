@@ -46,4 +46,4 @@ except Exception as error:
     st.write("An error has occurred", SystemExit(error))
 
 
-st.write("Made with ❤️ ")
+st.write("Enjoy your event")
